@@ -6,7 +6,6 @@
 body {
   display: flex;
   justify-content: center;
-  max-width: 1600px;
   margin: auto;
 }
 
@@ -26,7 +25,6 @@ header {
   align-items: center;
   position: fixed;
   z-index: 10;
-  max-width: 1600px;
   height: 80px;
   width: 100%;
   background-color: #ffffff;
@@ -310,6 +308,11 @@ section {
 .feature-content-card ul li {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1607843137);
   border: 1px solid #CCCCCC;
+}
+.feature-content-card ul li img {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s, transform 1s;
 }
 .feature-content-card ul li div {
   padding: 31px 27px;
