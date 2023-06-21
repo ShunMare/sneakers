@@ -75,6 +75,12 @@ section {
         box-shadow: 0px 0px 8px #00000029;
         border: 1px solid #CCCCCC;
 
+        img {
+          opacity: 0;
+          transform: translateY(10px);
+          transition: opacity 1s, transform 1s; 
+        }
+
         div {
           padding: 31px 27px;
           @include respond(phone) {
